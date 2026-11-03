@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'https://videotube-project-1-80xu.onrender.com',
         changeOrigin: true,
         secure: false,
       },

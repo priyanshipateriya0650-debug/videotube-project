@@ -7,8 +7,7 @@ import axios from 'axios';
  * - Dual-layer auth: Also attaches Bearer token header if an accessToken exists in storage.
  * - Response interceptor handles 401 errors and attempts token refresh without infinite loops.
  */
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api/v1';
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://videotube-project-1-80xu.onrender.com/api/v1';
 export const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
   withCredentials: true,
